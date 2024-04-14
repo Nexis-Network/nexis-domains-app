@@ -14,7 +14,7 @@ import namehash from '@ensdomains/eth-ens-namehash'
 import resolvers from '../api/rootResolver'
 import typePolicies from './typePolicies'
 import { networkIdReactive } from './reactiveVars'
-import { ethers } from '@ensdomains/ui'
+import { ethers } from '@nexis-network/domains-ui'
 import { getRegistrar } from './mutations/ens'
 
 let client

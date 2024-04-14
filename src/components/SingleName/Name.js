@@ -22,7 +22,7 @@ import {
 } from '../Banner/DAOBanner'
 import NameWrapperBanner from '../Banner/NameWrapperBanner'
 import NameWrapperJSON from '@ensdomains/ens-contracts/artifacts/contracts/wrapper/NameWrapper.sol/NameWrapper.json'
-import { nzters, getNamehash, getProvider } from '@ensdomains/ui'
+import { nzters, getNamehash, getProvider } from '@nexis-network/domains-ui'
 
 const Owner = styled('div')`
   color: #ccd4da;

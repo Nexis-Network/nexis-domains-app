@@ -3,7 +3,7 @@ import {
   getNetwork,
   getNetworkId,
   isReadOnly
-} from '@ensdomains/ui'
+} from '@nexis-network/domains-ui'
 import { connect } from './api/web3modal'
 import { setup } from './apollo/mutations/ens'
 import {

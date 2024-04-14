@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 import styled from '@emotion/styled/macro'
 import { Query } from '@apollo/client/react/components'
 import DomainItem from '../components/DomainItem/DomainItem'
-import { getNamehash } from '@ensdomains/ui'
+import { getNamehash } from '@nexis-network/domains-ui'
 import { useQuery } from '@apollo/client'
 import { gql } from '@apollo/client'
 
@@ -251,7 +251,6 @@ function Favourites() {
   const canRenew = favouritesList.filter(f => f.expiryDate).length > 0
   return (
     <FavouritesContainer data-testid="favourites-container">
-
       <H2>{t('favourites.favouriteTitle')}</H2>
       {canRenew && (
         <>

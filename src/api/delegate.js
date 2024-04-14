@@ -1,4 +1,4 @@
-import { ethers, getNetworkId, getProvider } from '@ensdomains/ui'
+import { ethers, getNetworkId, getProvider } from '@nexis-network/domains-ui'
 import { EMPTY_ADDRESS } from 'utils/records'
 
 const ENSTokenABI = [

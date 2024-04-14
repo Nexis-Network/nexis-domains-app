@@ -1,4 +1,9 @@
-import { ethers, getNetwork, getNetworkId, isReadOnly } from '@ensdomains/ui'
+import {
+  ethers,
+  getNetwork,
+  getNetworkId,
+  isReadOnly
+} from '@nexis-network/domains-ui'
 import { setup as setupENS } from '../apollo/mutations/ens'
 import {
   isReadOnlyReactive,

@@ -1,4 +1,4 @@
-import { setupENS } from '@ensdomains/ui'
+import { setupENS } from '@nexis-network/domains-ui'
 import { isENSReadyReactive } from '../reactiveVars'
 
 let ens = {},

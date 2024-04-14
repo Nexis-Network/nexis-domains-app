@@ -1,5 +1,5 @@
 import ReactGA from 'react-ga'
-import { getNetworkId } from '@ensdomains/ui'
+import { getNetworkId } from '@nexis-network/domains-ui'
 
 const TrackingID = {
   live: '',
