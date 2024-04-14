@@ -168,9 +168,6 @@
       "not ie < 11"
     ]
   },
-  "engines": {
-    "node": ">=14 <17"
-  },
   "jest": {
     "resetMocks": false
   },
