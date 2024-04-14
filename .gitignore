@@ -41,3 +41,4 @@ package-lock.json
 yalc.lock
 
 /data
+.vercel
