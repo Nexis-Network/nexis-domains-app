@@ -28,7 +28,7 @@ const LogoContainer = styled(Link)`
 
 const Logo = ({ color, className, to = '' }) => (
   <LogoContainer className={className} to={to}>
-    <IconLogo src={ENSLogo} />
+    <IconLogo src={ENSLogo} style={{backgroundColor:'#528ffe',padding:'6px',borderRadius:'100px'}}/>
     <LogoTyped color={color} />
   </LogoContainer>
 )
