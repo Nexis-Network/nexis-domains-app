@@ -61,7 +61,7 @@ const NotifyButtonDisabled = styled('div')`
   color: hsla(0, 0%, 82%, 1);
 `
 
-const Explainer = ({ step, waitPercentComplete, waitTime }) => {
+const Explainer = ({ step, waitPercentComplete, waitTime ,dispatch}) => {
   const { t } = useTranslation()
   const titles = {
     PRICE_DECISION: t('register.titles.0'),
@@ -119,6 +119,7 @@ const Explainer = ({ step, waitPercentComplete, waitTime }) => {
           }
           text={t('register.step2.text')}
         />
+       
         <Step
           number={3}
           progress={
@@ -128,6 +129,7 @@ const Explainer = ({ step, waitPercentComplete, waitTime }) => {
           text={t('register.step3.text')}
         />
       </Steps>
+      {waitPercentComplete==100 && step==='COMMIT_CONFIRMED'?<button onClick={()=>dispatch('NEXT')}>Continue</button> :<></>}
     </>
   )
 }

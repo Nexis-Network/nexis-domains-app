@@ -308,9 +308,11 @@ const NameRegister = ({
         step={step}
         waitTime={waitTime}
         waitPercentComplete={waitPercentComplete}
+        dispatch={dispatch}
       />
       <Progress step={step} waitPercentComplete={waitPercentComplete} />
-      <button onClick={() => dispatch('NEXT')}>dispatch('NEXT')</button>
+      {step=='COMMIT_SENT' ?<button onClick={() => dispatch('NEXT')}>Confirm</button>:""}
+      
       <CTA
         hasSufficientBalance={hasSufficientBalance}
         waitTime={waitTime}
