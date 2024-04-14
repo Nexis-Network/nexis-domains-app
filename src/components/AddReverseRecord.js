@@ -12,7 +12,7 @@ import { useEditable } from './hooks'
 
 import {
   GET_REVERSE_RECORD,
-  GET_nzt_RECORD_AVAILABLE_NAMES_FROM_SUBGRAPH
+  GET_ETH_RECORD_AVAILABLE_NAMES_FROM_SUBGRAPH
 } from 'graphql/queries'
 
 import SaveCancel from './SingleName/SaveCancel'
@@ -158,10 +158,8 @@ function AddReverseRecord({ account, currentAddress }) {
     data: { networkId }
   } = useQuery(SINGLE_NAME)
 
-  console.log('networkId: ', networkId)
-
   const { data: { domains } = {}, refetch: refetchNames } = useQuery(
-    GET_nzt_RECORD_AVAILABLE_NAMES_FROM_SUBGRAPH,
+    GET_ETH_RECORD_AVAILABLE_NAMES_FROM_SUBGRAPH,
     {
       variables: {
         address: currentAddress

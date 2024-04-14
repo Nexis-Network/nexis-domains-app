@@ -232,7 +232,7 @@ const getInitialRecords = (domain, dataAddresses, dataTextRecords) => {
 const getCoins = updatedRecords =>
   updatedRecords
     .filter(record => record.contractFn === 'setAddr(bytes32,uint256,bytes)')
-    .sort(record => (record.key === 'ETH' ? -1 : 1))
+    .sort(record => (record.key === 'NZT' ? -1 : 1))
 
 const getContent = updatedRecords => {
   const content = updatedRecords.filter(

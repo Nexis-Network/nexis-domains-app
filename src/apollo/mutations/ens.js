@@ -33,8 +33,6 @@ export async function setup({
       providerObject
     } = await setupENS(option)
 
-    console.log(option)
-
     ens = ensInstance
     registrar = registrarInstance
     ensRegistryAddress = ensAddress

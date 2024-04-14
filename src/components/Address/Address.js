@@ -121,7 +121,6 @@ function normaliseAddress(address) {
 }
 
 function decryptNames(domains) {
-  console.log(domains)
   return domains.map(d => {
     const name = decryptName(d.domain.name)
     return {
@@ -143,36 +142,42 @@ function useDomains({
   page,
   expiryDate
 }) {
-  const skip = (page - 1) * resultsPerPage
-  const registrationsQuery = useQuery(GET_REGISTRATIONS_SUBGRAPH, {
-    variables: {
-      id: address,
-      first: resultsPerPage,
-      skip,
-      orderBy: sort.type,
-      orderDirection: sort.direction,
-      expiryDate
-    },
-    skip: domainType !== 'registrant',
-    fetchPolicy: 'no-cache'
-  })
+  try {
+    const skip = (page - 1) * resultsPerPage
+    const registrationsQuery = useQuery(GET_REGISTRATIONS_SUBGRAPH, {
+      variables: {
+        id: address,
+        first: resultsPerPage,
+        skip,
+        orderBy: sort.type,
+        orderDirection: sort.direction,
+        expiryDate
+      },
+      skip: domainType !== 'registrant',
+      fetchPolicy: 'no-cache'
+    })
 
-  const controllersQuery = useQuery(GET_DOMAINS_SUBGRAPH, {
-    variables: {
-      id: address,
-      first: resultsPerPage,
-      skip
-    },
-    skip: domainType !== 'controller',
-    fetchPolicy: 'no-cache'
-  })
-
-  if (domainType === 'registrant') {
-    return registrationsQuery
-  } else if (domainType === 'controller') {
-    return controllersQuery
-  } else {
-    throw new Error('Unrecognised domainType')
+  
+    const controllersQuery = useQuery(GET_DOMAINS_SUBGRAPH, {
+      variables: {
+        id: address,
+        first: resultsPerPage,
+        skip
+      },
+      skip: domainType !== 'controller',
+      fetchPolicy: 'no-cache'
+    })
+  
+  
+    if (domainType === 'registrant') {
+      return registrationsQuery
+    } else if (domainType === 'controller') {
+      return controllersQuery
+    } else {
+      throw new Error('Unrecognised domainType')
+    }
+  } catch (error) {
+    console.log(error)
   }
 }
 
@@ -256,6 +261,7 @@ export default function Address({
     page,
     expiryDate
   })
+
 
   const {
     data: { globalError }
@@ -344,11 +350,11 @@ export default function Address({
         <TopBar>
           <SingleNameBlockies address={address} />
           <Title>{address}</Title>
-          {etherScanAddr && (
-            <EtherScanLink address={address}>
-              {t('address.etherscanButton')}
-            </EtherScanLink>
-          )}
+          {/* {etherScanAddr && (
+            // <EtherScanLink address={address}>
+            //   {t('address.etherscanButton')}
+            // </EtherScanLink>
+          )} */}
         </TopBar>
         <AddReverseRecord account={account} currentAddress={address} />
         <Controls>
