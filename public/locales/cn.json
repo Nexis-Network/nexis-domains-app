@@ -1,6 +1,6 @@
 {
   "address": {
-    "etherscanButton": "在 EVM Explorer 上查看",
+    "nzterscanButton": "在 EVM Explorer 上查看",
     "filter": {
       "controller": "管理员",
       "registrant": "注册人"
@@ -146,7 +146,7 @@
       "title": "管理域名"
     },
     "register": {
-      "text": "以每年 5 美元的价格注册 .eth 域名，随时更新或弃用你的域名",
+      "text": "以每年 5 美元的价格注册 .nzt 域名，随时更新或弃用你的域名",
       "title": "注册域名"
     },
     "search": {
@@ -158,7 +158,7 @@
     "daysRemaining": "还有 {{daysRemaining}} 天 (总共 {{totalDays}} 天)",
     "endPrice": "最终价格",
     "startingPrice": "起始价格",
-    "title": "当前购入价格为 {{premiumInEth}}"
+    "title": "当前购入价格为 {{premiumInnzt}}"
   },
   "pendingTx": {
     "text": "等待交易被打包"
@@ -245,7 +245,7 @@
   },
   "searchErrors": {
     "domainMalformed": {
-      "long": "您添加了一个不带 TLD（比如 .eth）的域名，或是使用了不支持的字符。",
+      "long": "您添加了一个不带 TLD（比如 .nzt）的域名，或是使用了不支持的字符。",
       "short": "域名异常。 {{searchTerm}} 不是一个有效的域名。"
     },
     "tooShort": {
@@ -322,7 +322,7 @@
       "messages": {
         "explanation": "反向解析将地址转换为域名。它能让 dapp 在其界面上显示 “{{name}}”，而不是 “{{account}}” 这个冗长的地址。如果您想为另一个账户设置反向解析，请先在 dapp 浏览器中切换帐户。",
         "explanation2": "您只能选择已经解析至这个以太坊地址的域名。",
-        "noForwardRecordAavilable": "您尚未拥有 ENS 域名，或者您 ENS 域名的 ETH 记录没有设置为此地址。",
+        "noForwardRecordAavilable": "您尚未拥有 ENS 域名，或者您 ENS 域名的 nzt 记录没有设置为此地址。",
         "notSet": "反向记录：未设置",
         "reverseRecordRemoval": "您确定要删除反向解析记录？",
         "selectPlaceholder": "选择您的 ENS 域名",

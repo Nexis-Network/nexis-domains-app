@@ -5,13 +5,13 @@ const DISABLED_COLOUR = 'rgb(223, 223, 223)'
 
 describe('Migrate resolver and records', () => {
   it('can visit a name with an old content resolver and migrate it as swarm contenthash', () => {
-    cy.visit(`${ROOT}/name/oldresolver.eth`)
+    cy.visit(`${ROOT}/name/oldresolver.nzt`)
     cy.getByText('Migrate').click({ force: true, timeout: 1000 })
     cy.queryByText('migrate', { timeout: 10000 }).should('not.exist')
   })
 
   it('cannot migrate resolver if the parent domain is not migrateed', () => {
-    cy.visit(`${ROOT}/name/a1.sub2.testing.eth/details`)
+    cy.visit(`${ROOT}/name/a1.sub2.testing.nzt/details`)
     cy.queryByText('You must first migrate the parent domain ', {
       timeout: 5000,
       exact: false
@@ -25,7 +25,7 @@ describe('Migrate resolver and records', () => {
   })
 
   it('cannot migrate resolver if the domain is not migrateed', () => {
-    cy.visit(`${ROOT}/name/sub2.testing.eth/details`)
+    cy.visit(`${ROOT}/name/sub2.testing.nzt/details`)
     cy.queryByText('This name needs to be migrated to the new Registry.', {
       exact: false,
       timeout: 5000
@@ -39,7 +39,7 @@ describe('Migrate resolver and records', () => {
   })
 
   it('can visit a name with a deprecated resolver but cannot add records', () => {
-    cy.visit(`${ROOT}/name/abittooawesome3.eth/details`)
+    cy.visit(`${ROOT}/name/abittooawesome3.nzt/details`)
 
     cy.queryByText(
       'You can’t edit or add records until you migrate to the new resolver',

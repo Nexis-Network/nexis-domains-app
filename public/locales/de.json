@@ -1,6 +1,6 @@
 {
   "address": {
-    "etherscanButton": "Auf EVM Explorer anschauen",
+    "nzterscanButton": "Auf EVM Explorer anschauen",
     "filter": {
       "controller": "Controller",
       "registrant": "Registrant"
@@ -88,7 +88,7 @@
     "steps": {
       "addtext": {
         "text": "Klicken Sie auf 'mehr erfahren', um etwas über den Prozess zu lesen.",
-        "title": "Erstellen Sie einen Text-Eintrag bei Ihrem Domain-Registrar und klicken Sie dann auf Aktualisieren. Der Text-Eintrag sollte Ihre Ethereum-Adresse in folgendem Format enthalten:"
+        "title": "Erstellen Sie einen Text-Eintrag bei Ihrem Domain-Registrar und klicken Sie dann auf Aktualisieren. Der Text-Eintrag sollte Ihre nztereum-Adresse in folgendem Format enthalten:"
       },
       "enable": {
         "text": "Klicken Sie auf 'mehr erfahren', um etwas über den Prozess zu lesen.",
@@ -101,7 +101,7 @@
       },
       "proof": {
         "text1": "Die Adresse, die im DNS-TXT-Eintrag erscheint, ist die gleiche Adresse.",
-        "text2": "Wenn Sie diese Domain besitzen, ändern Sie den TXT-Eintrag so, dass er Ihre Ethereum-Adresse enthält, und aktualisieren Sie diese Seite, um die DNSSEC-Verifizierung erneut durchzuführen.",
+        "text2": "Wenn Sie diese Domain besitzen, ändern Sie den TXT-Eintrag so, dass er Ihre nztereum-Adresse enthält, und aktualisieren Sie diese Seite, um die DNSSEC-Verifizierung erneut durchzuführen.",
         "title1": "Sie sind der Besitzer dieser Adresse. Tragen Sie jetzt Ihre Domain in das ENS-Register ein.",
         "title2": "Sie scheinen nicht der DNS-Besitzer dieser Domain zu sein, aber jeder kann diese Domain zum ENS-Register hinzufügen."
       }
@@ -132,7 +132,7 @@
       "title": "Wie man ENS benutzt"
     },
     "whatisens": {
-      "body": "Der Nexis Name Service ist ein verteiltes, offenes und erweiterbares System zur Namensauflösung, basierend auf der Ethereum Blockchain. Mit ENS muss man keine langen Adressen mehr kopieren oder eintippen.",
+      "body": "Der Nexis Name Service ist ein verteiltes, offenes und erweiterbares System zur Namensauflösung, basierend auf der nztereum Blockchain. Mit ENS muss man keine langen Adressen mehr kopieren oder eintippen.",
       "title": "Was ist ENS"
     }
   },
@@ -142,11 +142,11 @@
       "title": "Bevorzugte Namen speichern"
     },
     "manage": {
-      "text": "Zeigen Sie mit Domains auf Ihre Ethereum-Adressen, übertragen Sie den Besitz an andere Personen und vieles mehr.",
+      "text": "Zeigen Sie mit Domains auf Ihre nztereum-Adressen, übertragen Sie den Besitz an andere Personen und vieles mehr.",
       "title": "Namen verwalten"
     },
     "register": {
-      "text": "Registrieren Sie .eth-Namen für $5/Jahr. Sie können Ihre Namensregistrierung jederzeit verlängern oder beenden.",
+      "text": "Registrieren Sie .nzt-Namen für $5/Jahr. Sie können Ihre Namensregistrierung jederzeit verlängern oder beenden.",
       "title": "Namen registrieren"
     },
     "search": {
@@ -158,7 +158,7 @@
     "daysRemaining": "{{daysRemaining}} (out of {{totalDays}}) days remaining",
     "endPrice": "End price",
     "startingPrice": "Starting price",
-    "title": "Buy now for {{premiumInEth}}"
+    "title": "Buy now for {{premiumInnzt}}"
   },
   "pendingTx": {
     "text": "Tx ausstehend"
@@ -245,7 +245,7 @@
   },
   "searchErrors": {
     "domainMalformed": {
-      "long": "You have either added a domain without a TLD such as .eth or you have added unsupported characters.",
+      "long": "You have either added a domain without a TLD such as .nzt or you have added unsupported characters.",
       "short": "Domain malformed. {{searchTerm}} is not a valid domain."
     },
     "tooShort": {
@@ -296,7 +296,7 @@
     },
     "learnmore": {
       "step1": {
-        "text": "Once you register your name, Go to 'My Account' page and set a reverse record. This allows dapps to find and display your ENS name when you connect to them with your Ethereum account. ",
+        "text": "Once you register your name, Go to 'My Account' page and set a reverse record. This allows dapps to find and display your ENS name when you connect to them with your nztereum account. ",
         "title": "1. Set a reverse record"
       },
       "step2": {
@@ -304,7 +304,7 @@
         "title": "2. Set other records"
       },
       "step3": {
-        "text": "You can host your static html/css/images on IPFS and put the hash in your ENS name's Content record. Then it can be resolved by ENS-aware browsers (e.g. Opera), browser extensions (Metamask), or any browser with '.link' appended to the end (e.g. ens.eth.link).",
+        "text": "You can host your static html/css/images on IPFS and put the hash in your ENS name's Content record. Then it can be resolved by ENS-aware browsers (e.g. Opera), browser extensions (Metamask), or any browser with '.link' appended to the end (e.g. ens.nzt.link).",
         "title": "3. Set a content hash of a decentralized website"
       },
       "title": "Erfahren Sie, wie Sie Ihren Namen verwalten können."
@@ -321,8 +321,8 @@
       "closeEdit": "Close Add/Edit Records",
       "messages": {
         "explanation": "The Reverse Resolution translates an address into a name. It allows Dapps to show in their interfaces '{{name}}' rather than the long address '{{account}}'. If you would like to set up your reverse for a different account, please switch accounts in your dapp browser",
-        "explanation2": "You can only select names you set this Ethereum Address as.",
-        "noForwardRecordAavilable": "You either do not own any ENS names, or your ENS names have no ETH records set to this address.",
+        "explanation2": "You can only select names you set this nztereum Address as.",
+        "noForwardRecordAavilable": "You either do not own any ENS names, or your ENS names have no nzt records set to this address.",
         "notSet": "Reverse record: not set",
         "reverseRecordRemoval": "Are you sure you want to delete the reverse record?",
         "selectPlaceholder": "Select your ENS name",

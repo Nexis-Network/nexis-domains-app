@@ -1,6 +1,6 @@
 {
   "address": {
-    "etherscanButton": "Zobacz na EVM Explorer",
+    "nzterscanButton": "Zobacz na EVM Explorer",
     "filter": {
       "controller": "Kontroler",
       "registrant": "Rejestrujący"
@@ -90,7 +90,7 @@
     "steps": {
       "addtext": {
         "text": "Kliknij \"dowiedz się więcej\", aby przeczytać o procesie.",
-        "title": "\nSkonfiguruj rekord tekstowy w rejestratorze domeny, a następnie kliknij Odśwież. Rekord tekstowy powinien zawierać Twój adres Ethereum w postaci:"
+        "title": "\nSkonfiguruj rekord tekstowy w rejestratorze domeny, a następnie kliknij Odśwież. Rekord tekstowy powinien zawierać Twój adres nztereum w postaci:"
       },
       "enable": {
         "text": "Kliknij \"dowiedz się więcej\", aby przeczytać o procesie.",
@@ -103,7 +103,7 @@
       },
       "proof": {
         "text1": "\nAdres, który pojawia się w rekordzie txt DNS, to ten sam adres.",
-        "text2": "Jeśli wiesz, że posiadasz tę domenę, zmień jej rekord TXT, aby zawierał Adres Ethereum i odśwież stronę, aby ponownie przeprowadzić weryfikację DNSSEC.",
+        "text2": "Jeśli wiesz, że posiadasz tę domenę, zmień jej rekord TXT, aby zawierał Adres nztereum i odśwież stronę, aby ponownie przeprowadzić weryfikację DNSSEC.",
         "title1": "Jesteś właścicielem tego adresu. Dodaj teraz swoją domenę do Rejestru ENS.",
         "title2": "Nie jesteś właścicielem DNS tej domeny, lecz każdy może dodać domenę do Rejestru ENS."
       }
@@ -134,7 +134,7 @@
       "title": "Jak używać ENS"
     },
     "whatisens": {
-      "body": "The Nexis Name Service to rozproszony, otwarty i rozszerzalny system nazewnictwa oparty na blockchainie Ethereum. ENS eliminuje potrzebę kopiowania lub wpisywania długich adresów.",
+      "body": "The Nexis Name Service to rozproszony, otwarty i rozszerzalny system nazewnictwa oparty na blockchainie nztereum. ENS eliminuje potrzebę kopiowania lub wpisywania długich adresów.",
       "title": "Co to jest"
     }
   },
@@ -144,11 +144,11 @@
       "title": "Ustaw ulubione nazwy"
     },
     "manage": {
-      "text": "\nPołącz domeny z adresami ethereum, przenieś własność na inne osoby i nie tylko.",
+      "text": "\nPołącz domeny z adresami nztereum, przenieś własność na inne osoby i nie tylko.",
       "title": "Zarządzaj nazwami"
     },
     "register": {
-      "text": "Zarejestruj nazwę .eth za $5/rok. Odnów lub anuluj twoją rejestrację nazwy w dowolnym momencie.",
+      "text": "Zarejestruj nazwę .nzt za $5/rok. Odnów lub anuluj twoją rejestrację nazwy w dowolnym momencie.",
       "title": "Zarejestruj nazwy"
     },
     "search": {
@@ -160,7 +160,7 @@
     "daysRemaining": "{{daysRemaining}} (out of {{totalDays}}) days remaining",
     "endPrice": "End price",
     "startingPrice": "Starting price",
-    "title": "Buy now for {{premiumInEth}}"
+    "title": "Buy now for {{premiumInnzt}}"
   },
   "pendingTx": {
     "text": "Oczekujący Tx"
@@ -247,7 +247,7 @@
   },
   "searchErrors": {
     "domainMalformed": {
-      "long": "You have either added a domain without a TLD such as .eth or you have added unsupported characters.",
+      "long": "You have either added a domain without a TLD such as .nzt or you have added unsupported characters.",
       "short": "Domain malformed. {{searchTerm}} is not a valid domain."
     },
     "tooShort": {
@@ -298,7 +298,7 @@
     },
     "learnmore": {
       "step1": {
-        "text": "Once you register your name, Go to 'My Account' page and set a reverse record. This allows dapps to find and display your ENS name when you connect to them with your Ethereum account. ",
+        "text": "Once you register your name, Go to 'My Account' page and set a reverse record. This allows dapps to find and display your ENS name when you connect to them with your nztereum account. ",
         "title": "1. Set a reverse record"
       },
       "step2": {
@@ -306,7 +306,7 @@
         "title": "2. Set other records"
       },
       "step3": {
-        "text": "You can host your static html/css/images on IPFS and put the hash in your ENS name's Content record. Then it can be resolved by ENS-aware browsers (e.g. Opera), browser extensions (Metamask), or any browser with '.link' appended to the end (e.g. ens.eth.link).",
+        "text": "You can host your static html/css/images on IPFS and put the hash in your ENS name's Content record. Then it can be resolved by ENS-aware browsers (e.g. Opera), browser extensions (Metamask), or any browser with '.link' appended to the end (e.g. ens.nzt.link).",
         "title": "3. Set a content hash of a decentralized website"
       },
       "title": "Learn how to manage your name."
@@ -323,8 +323,8 @@
       "closeEdit": "Close Add/Edit Records",
       "messages": {
         "explanation": "Reverse Resolution tłumaczy adres na nazwę. Pozwala Dapps na wyświetlanie w ich interfejsach '{{name}}' zamiast długiego adresu '{{konto}}'. Jeśli chcesz skonfigurować swój rewers dla innego konta, przełącz konta w przeglądarce dapp.",
-        "explanation2": "You can only select names you set this Ethereum Address as.",
-        "noForwardRecordAavilable": "You either do not own any ENS names, or your ENS names have no ETH records set to this address.",
+        "explanation2": "You can only select names you set this nztereum Address as.",
+        "noForwardRecordAavilable": "You either do not own any ENS names, or your ENS names have no nzt records set to this address.",
         "notSet": "Rekord Reverse: nie ustawiono",
         "reverseRecordRemoval": "Are you sure you want to delete the reverse record?",
         "selectPlaceholder": "Select your ENS name",

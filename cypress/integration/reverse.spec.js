@@ -28,13 +28,13 @@ describe(
         force: true
       })
 
-      cy.getByText('sub1.otherowner.eth', { exact: true }).click({
+      cy.getByText('sub1.otherowner.nzt', { exact: true }).click({
         force: true
       })
 
       cy.getByText('Save', { timeout: 5000 }).click({ force: true })
 
-      cy.queryByText(`Primary ENS Name (reverse record): sub1.otherowner.eth`, {
+      cy.queryByText(`Primary ENS Name (reverse record): sub1.otherowner.nzt`, {
         exact: false,
         timeout: 10000
       }).should('exist')
@@ -44,7 +44,7 @@ describe(
 
       cy.getByTestId('account', { exact: false, timeout: 10000 }).should(
         'have.text',
-        'sub1.otherowner.eth'
+        'sub1.otherowner.nzt'
       )
     })
   }

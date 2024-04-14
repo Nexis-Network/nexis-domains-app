@@ -22,7 +22,7 @@ import {
 } from '../Banner/DAOBanner'
 import NameWrapperBanner from '../Banner/NameWrapperBanner'
 import NameWrapperJSON from '@ensdomains/ens-contracts/artifacts/contracts/wrapper/NameWrapper.sol/NameWrapper.json'
-import { ethers, getNamehash, getProvider } from '@ensdomains/ui'
+import { nzters, getNamehash, getProvider } from '@ensdomains/ui'
 
 const Owner = styled('div')`
   color: #ccd4da;
@@ -37,12 +37,12 @@ const RightBar = styled('div')`
 const Favourite = styled(DefaultFavourite)``
 
 function isRegistrationOpen(available, parent) {
-  return parent === 'eth' && available
+  return parent === 'nzt' && available
 }
 
 function isDNSRegistrationOpen(domain) {
   const nameArray = domain.name?.split('.')
-  if (nameArray?.length !== 2 || nameArray?.[1] === 'eth') {
+  if (nameArray?.length !== 2 || nameArray?.[1] === 'nzt') {
     return false
   }
   return domain.isDNSRegistrar && domain.owner === EMPTY_ADDRESS
@@ -65,7 +65,7 @@ const useNameWrapperVariables = (domain, account) => {
   const queryNameWrapper = useCallback(async () => {
     const provider = await getProvider()
     const nameWrapperAddress = process.env.REACT_APP_NAME_WRAPPER_ADDRESS
-    const nameWrapperContract = new ethers.Contract(
+    const nameWrapperContract = new nzters.Contract(
       nameWrapperAddress,
       NameWrapperJSON.abi,
       provider

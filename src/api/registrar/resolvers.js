@@ -13,9 +13,9 @@ const resolvers = {
       const registrar = getRegistrar()
       return registrar.getPriceCurve()
     },
-    async getEthPrice(_, {}) {
+    async getnztPrice(_, {}) {
       const registrar = getRegistrar()
-      return registrar.getEthPrice()
+      return registrar.getnztPrice()
     },
     async getRentPrice(_, { label, duration }) {
       const registrar = getRegistrar()
@@ -108,12 +108,12 @@ const resolvers = {
         }
 
         if (modeNames[state] === 'Owned') {
-          owner = await ens.getOwner(`${name}.eth`)
+          owner = await ens.getOwner(`${name}.nzt`)
         }
 
         const data = {
           domainState: {
-            name: `${name}.eth`,
+            name: `${name}.nzt`,
             state: modeNames[state],
             registrationDate,
             revealDate,

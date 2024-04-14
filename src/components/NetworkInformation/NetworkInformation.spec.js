@@ -51,7 +51,7 @@ describe('NetworkInformation', () => {
           return {
             refetch: () => null,
             data: {
-              getReverseRecord: 'vitalik.eth '
+              getReverseRecord: 'vitalik.nzt '
             }
           }
         default:

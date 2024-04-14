@@ -83,12 +83,12 @@ function Faq() {
 
         <Section question="Can you have names with emojis?">Yes.</Section>
 
-        <Section question="How much does it cost to register a .eth name?">
+        <Section question="How much does it cost to register a .nzt name?">
           Currently, registration costs are set at the following prices:
           <ul>
-            <li>5+ character .eth names: $5 in NZT per year.</li>
-            <li>4 character .eth names: $160 in NZT per year.</li>
-            <li>3 character .eth names $640 in NZT per year.</li>
+            <li>5+ character .nzt names: $5 in NZT per year.</li>
+            <li>4 character .nzt names: $160 in NZT per year.</li>
+            <li>3 character .nzt names $640 in NZT per year.</li>
           </ul>
           3 and 4 character names have 'premium' pricing to reflect the small
           number of these names available.
@@ -109,7 +109,7 @@ function Faq() {
           register (commit + registerWithConfig) and extend registration.
           <br />
           Please bear in mind that "registerWithConfig" combines 3 transactions
-          (register, set resolver and set eth address) hence the gas cost is
+          (register, set resolver and set nzt address) hence the gas cost is
           relatively expensive.
         </Section>
 
@@ -164,7 +164,7 @@ function Faq() {
           themselves as the Controller so they can update records on your
           behalf.
           <br />
-          The Registrant only exists on ".eth" names and it allows you to change
+          The Registrant only exists on ".nzt" names and it allows you to change
           the Controller. If you transfer the Registrant to an address you don't
           own, you lose the ownership of the name.
         </Section>
@@ -191,7 +191,7 @@ function Faq() {
           If you click the "trash bin" icon on the address record, it will unset
           your address so that people can no longer look up your address with
           the name. You can also unset ownership of subdomains in this way, but
-          you cannot do so on ".eth" addresses. Because ".eth" names are
+          you cannot do so on ".nzt" addresses. Because ".nzt" names are
           ERC721-compliant NFTs, you cannot transfer them to an empty address
           (0x00000...). You can transfer it to a burn address (eg: 0x00001), but
           that does not erase the fact that you used to own the name. Also, the
@@ -200,8 +200,8 @@ function Faq() {
         </Section>
 
         <Section question="How do I transfer my name?">
-          For a ".eth" name, transfer both the Registrant and the Controller to
-          the new Nexis account. Since ".eth" names are ERC721 compliant NFTs,
+          For a ".nzt" name, transfer both the Registrant and the Controller to
+          the new Nexis account. Since ".nzt" names are ERC721 compliant NFTs,
           you can change the Registrant by simply transferring the NFT from any
           NFT compliant wallet/marketplace as well.
           <br />

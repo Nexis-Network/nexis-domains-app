@@ -15,7 +15,7 @@ describe('Favorites', () => {
       'exist'
     )
 
-    cy.visit(`${NAME_ROOT}/resolver.eth`, { timeout: 20000 })
+    cy.visit(`${NAME_ROOT}/resolver.nzt`, { timeout: 20000 })
     cy.queryByText('Registrant', { timeout: 10000, exact: false }).should(
       'exist'
     )
@@ -25,14 +25,14 @@ describe('Favorites', () => {
     cy.visit(`${ROOT}/favourites`)
 
     cy.getByTestId('favourites-container').within(container => {
-      cy.queryByText('resolver.eth', { exact: false }).should('exist')
+      cy.queryByText('resolver.nzt', { exact: false }).should('exist')
       cy.queryByText('Expires', { exact: false }).should('exist')
     })
 
     cy.queryByText('No names have been saved.', { exact: false }).should(
       'not.exist'
     )
-    cy.visit(`${NAME_ROOT}/resolver.eth`, { timeout: 20000 })
+    cy.visit(`${NAME_ROOT}/resolver.nzt`, { timeout: 20000 })
     cy.getByTestId('add-favorite', { timeout: 10000 }).click({ force: true })
 
     cy.visit(`${ROOT}/favourites`)
@@ -43,7 +43,7 @@ describe('Favorites', () => {
 
   it('can click select all and renew all names with expiration including non owned names', () => {
     // Owned by others
-    const name = 'otherowner.eth'
+    const name = 'otherowner.nzt'
     cy.visit(`${NAME_ROOT}/${name}`, { timeout: 20000 })
     cy.queryByText('Registrant', { timeout: 10000, exact: false }).should(
       'exist'

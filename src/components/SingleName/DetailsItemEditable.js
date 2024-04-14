@@ -193,7 +193,7 @@ function getMessages({ keyName, parent, deedOwner, isDeedOwner, t }) {
   let [newValue, newType] = getDefaultMessage(keyName, t)
   if (
     keyName === 'Owner' &&
-    parent === 'eth' &&
+    parent === 'nzt' &&
     parseInt(deedOwner, 16) !== 0
   ) {
     newValue = t('singleName.messages.noresolver')

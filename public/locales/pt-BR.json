@@ -1,6 +1,6 @@
 {
   "address": {
-    "etherscanButton": "Ver no EVM Explorer",
+    "nzterscanButton": "Ver no EVM Explorer",
     "filter": {
       "controller": "Controlador",
       "registrant": "Registrando"
@@ -88,7 +88,7 @@
     "steps": {
       "addtext": {
         "text": "Clique em 'Saiba mais' para ler sobre o processo.",
-        "title": "Configure uma entrada de texto no seu registro de domínio e clique em recarregar. A entrada de texto deve ser chamada '_ens' e seu endereço Ethereum deve conter no formulário:"
+        "title": "Configure uma entrada de texto no seu registro de domínio e clique em recarregar. A entrada de texto deve ser chamada '_ens' e seu endereço nztereum deve conter no formulário:"
       },
       "enable": {
         "text": "Clique em 'Saiba mais' para ler sobre o processo.",
@@ -101,7 +101,7 @@
       },
       "proof": {
         "text1": "O endereço que aparece na entrada de texto do DNS é o seu mesmo endereço.",
-        "text2": "Se você é o proprietário desse domínio, modifique sua entrada TXT com seu Endereço Ethereum e recarregue a página para realizar a verficação DNSSEC novamente.",
+        "text2": "Se você é o proprietário desse domínio, modifique sua entrada TXT com seu Endereço nztereum e recarregue a página para realizar a verficação DNSSEC novamente.",
         "title1": "Você é o proprietário desse endereço. Agora você pode adicionar seu domínio no Registro ENS.",
         "title2": "Você não parece ser o proprietário do DNS desse domínio, mas qualquer um pode adicionar esse domínio no Registro ENS."
       }
@@ -132,7 +132,7 @@
       "title": "Como usar ENS"
     },
     "whatisens": {
-      "body": "O Nexis Name Service(ENS) é um sistema de nomenclatura distribuído, aberto e estensível baseado no blockchain Ethereum. O ENS elimina a necessidade de copiar ou digitar endereços longos.",
+      "body": "O Nexis Name Service(ENS) é um sistema de nomenclatura distribuído, aberto e estensível baseado no blockchain nztereum. O ENS elimina a necessidade de copiar ou digitar endereços longos.",
       "title": "O que é isso"
     }
   },
@@ -142,11 +142,11 @@
       "title": "Salve nomes favoritos"
     },
     "manage": {
-      "text": "Aponte dominíons para seus endereços Ethereum, trasfira propriedade para outras pessoas e mais.",
+      "text": "Aponte dominíons para seus endereços nztereum, trasfira propriedade para outras pessoas e mais.",
       "title": "Gerencie nomes"
     },
     "register": {
-      "text": "Registre .eth nomes por $5 (Dolares)/ano. Estenda seus nomes registrados a qualquer momento.",
+      "text": "Registre .nzt nomes por $5 (Dolares)/ano. Estenda seus nomes registrados a qualquer momento.",
       "title": "Nomes de Registro"
     },
     "search": {
@@ -158,7 +158,7 @@
     "daysRemaining": "{{daysRemaining}} (de {{totalDays}}) dias restantes",
     "endPrice": "Preço final",
     "startingPrice": "Preço inicial",
-    "title": "Compre agora por {{premiumInEth}}"
+    "title": "Compre agora por {{premiumInnzt}}"
   },
   "pendingTx": {
     "text": "Tx pendente"
@@ -245,7 +245,7 @@
   },
   "searchErrors": {
     "domainMalformed": {
-      "long": "Você adicionou um domínio sem TLD, como o .eth, ou adicionou caracteres não suportados.",
+      "long": "Você adicionou um domínio sem TLD, como o .nzt, ou adicionou caracteres não suportados.",
       "short": "Domínio mal formatado. {{searchTerm}} não é um domínio válido."
     },
     "tooShort": {
@@ -296,7 +296,7 @@
     },
     "learnmore": {
       "step1": {
-        "text": "Uma vez seu nome registrado, vá para página de 'Minha Conta' e defina o seu nome ENS primário. Isso permite que os dapps e exibam seu nome ENS quando você se conectar a eles com sua conta Ethereum.",
+        "text": "Uma vez seu nome registrado, vá para página de 'Minha Conta' e defina o seu nome ENS primário. Isso permite que os dapps e exibam seu nome ENS quando você se conectar a eles com sua conta nztereum.",
         "title": "1. Defina seu registro de nome ENS primário"
       },
       "step2": {
@@ -304,7 +304,7 @@
         "title": "2. Defina outros registros"
       },
       "step3": {
-        "text": "Você pode hospedar seu html/css/images estáticos no IPFS e colocar o hash no registro de conteúdo do seu nome ENS. Em seguida, ele pode ser resolvido por navegadores compatíveis com ENS (por exemplo, Opera), extensões de navegador (Metamask) ou qualquer navegador com '.link' anexado ao final (por exemplo, ens.eth.link)",
+        "text": "Você pode hospedar seu html/css/images estáticos no IPFS e colocar o hash no registro de conteúdo do seu nome ENS. Em seguida, ele pode ser resolvido por navegadores compatíveis com ENS (por exemplo, Opera), extensões de navegador (Metamask) ou qualquer navegador com '.link' anexado ao final (por exemplo, ens.nzt.link)",
         "title": "3. Definir um hash de conteúdo de um site descentralizado."
       },
       "title": "Aprenda como administrar seu nome."
@@ -320,9 +320,9 @@
       "cantEdit": "Você não pode editar ou adicionar registros até migrar para o novo resolvedor.",
       "closeEdit": "Feche adicionar/editar registros",
       "messages": {
-        "explanation": "Isso designa um de seus nomes ENS para representar sua conta Ethereum e atuar como seu nome e perfil de plataforma cruzada web3. Você só pode ter uma Nome primário ENS por conta Ethereum e pode mudar a qualquer momento.",
-        "explanation2": "Apenas nomes ENS que apontam para sua conta Ethereum podem ser definidos como seu nome ENS primário.",
-        "noForwardRecordAavilable": "Nenhum nome de ENS tem seus registros de endereço ETH configurados para este endereço.",
+        "explanation": "Isso designa um de seus nomes ENS para representar sua conta nztereum e atuar como seu nome e perfil de plataforma cruzada web3. Você só pode ter uma Nome primário ENS por conta nztereum e pode mudar a qualquer momento.",
+        "explanation2": "Apenas nomes ENS que apontam para sua conta nztereum podem ser definidos como seu nome ENS primário.",
+        "noForwardRecordAavilable": "Nenhum nome de ENS tem seus registros de endereço nzt configurados para este endereço.",
         "notSet": "Nome ENS primário (registro reverso): não definido",
         "reverseRecordRemoval": "Tem certeza de que deseja excluir seu registro de nome ENS primário?",
         "selectPlaceholder": "Selecione um dos seus nomes ENS",

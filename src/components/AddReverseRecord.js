@@ -12,7 +12,7 @@ import { useEditable } from './hooks'
 
 import {
   GET_REVERSE_RECORD,
-  GET_ETH_RECORD_AVAILABLE_NAMES_FROM_SUBGRAPH
+  GET_nzt_RECORD_AVAILABLE_NAMES_FROM_SUBGRAPH
 } from 'graphql/queries'
 
 import SaveCancel from './SingleName/SaveCancel'
@@ -161,7 +161,7 @@ function AddReverseRecord({ account, currentAddress }) {
   console.log('networkId: ', networkId)
 
   const { data: { domains } = {}, refetch: refetchNames } = useQuery(
-    GET_ETH_RECORD_AVAILABLE_NAMES_FROM_SUBGRAPH,
+    GET_nzt_RECORD_AVAILABLE_NAMES_FROM_SUBGRAPH,
     {
       variables: {
         address: currentAddress
@@ -262,7 +262,7 @@ function AddReverseRecord({ account, currentAddress }) {
                   name:
                     (hasValidReverseRecord(getReverseRecord) &&
                       getReverseRecord.name) ||
-                    'example.eth'
+                    'example.nzt'
                 }}
                 ' rather than the long address '{{ account }}'. If you would
                 like to set up your reverse for a different account, please
@@ -285,7 +285,7 @@ function AddReverseRecord({ account, currentAddress }) {
             <Explanation>
               <p>
                 <Trans i18nKey="singleName.record.messages.explanation2">
-                  You can only select names you set this Ethereum Address as.
+                  You can only select names you set this nztereum Address as.
                 </Trans>
               </p>
             </Explanation>

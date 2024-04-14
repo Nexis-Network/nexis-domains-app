@@ -1,10 +1,10 @@
 const TLD = 'link'
 function createFetchUrl(name) {
-  return `https://eth.${TLD}/names/${name}.${TLD}`
+  return `https://nzt.${TLD}/names/${name}.${TLD}`
 }
 
 function whitelisted() {
-  return ['names.nexis.network', 'ens.eth', 'ens.eth.link'].includes(
+  return ['names.nexis.network', 'ens.nzt', 'ens.nzt.link'].includes(
     window.location.host
   )
 }
@@ -13,12 +13,12 @@ export function requestCertificate(name) {
   if (!whitelisted()) return Promise.resolve({ status: null })
   const fetchUrl = createFetchUrl(name)
   fetch(fetchUrl, {
-    method: 'PUT',
+    mnztod: 'PUT',
     mode: 'cors',
     headers: {
       Origin: '*',
       'Content-Type': 'text/plain',
-      'Access-Control-Request-Method': 'PUT'
+      'Access-Control-Request-Mnztod': 'PUT'
     }
   }).catch(e => {
     console.log(e)
@@ -30,8 +30,8 @@ export function checkCertificate(name) {
   return fetch(createFetchUrl(name))
 }
 
-export function isEthSubdomain(name) {
+export function isnztSubdomain(name) {
   let labels = name.split('.')
   let suffix = labels[labels.length - 1]
-  return suffix === 'eth' && name !== 'eth'
+  return suffix === 'nzt' && name !== 'nzt'
 }

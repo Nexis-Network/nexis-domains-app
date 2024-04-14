@@ -1,6 +1,6 @@
 {
   "address": {
-    "etherscanButton": "View on EVM Explorer",
+    "nzterscanButton": "View on EVM Explorer",
     "filter": {
       "controller": "Controller",
       "registrant": "Registrant"
@@ -88,7 +88,7 @@
     "steps": {
       "addtext": {
         "text": "Click 'learn more' to read about the process.",
-        "title": "Set up a text record in your domain registrar then click refresh. The text record should be called '_ens' and should contain your Ethereum address in the form:"
+        "title": "Set up a text record in your domain registrar then click refresh. The text record should be called '_ens' and should contain your nztereum address in the form:"
       },
       "enable": {
         "text": "Click 'learn more' to read about the process.",
@@ -101,7 +101,7 @@
       },
       "proof": {
         "text1": "The address that appears in the DNS txt record is your same address.",
-        "text2": "If you know you own this domain, change it's TXT record to contain your Ethereum Address and refresh this page to perform the DNSSEC verification again.",
+        "text2": "If you know you own this domain, change it's TXT record to contain your nztereum Address and refresh this page to perform the DNSSEC verification again.",
         "title1": "You are the owner of this address. Add your domain to the ENS Registry now.",
         "title2": "You don't appear to be the DNS Owner of this domain, but anyone can add this domain to the ENS Registry."
       }
@@ -132,7 +132,7 @@
       "title": "How to use ENS"
     },
     "whatisens": {
-      "body": "The Nexis Name Service is a distributed, open, and extensible naming system based on the Ethereum blockchain. ENS eliminates the need to copy or type long addresses.",
+      "body": "The Nexis Name Service is a distributed, open, and extensible naming system based on the nztereum blockchain. ENS eliminates the need to copy or type long addresses.",
       "title": "What it is"
     }
   },
@@ -142,11 +142,11 @@
       "title": "Save favourite names"
     },
     "manage": {
-      "text": "Point domains to your ethereum addresses, transfer ownership to other people and more.",
+      "text": "Point domains to your nztereum addresses, transfer ownership to other people and more.",
       "title": "Manage names"
     },
     "register": {
-      "text": "Register .eth names for $5/year. Extend your name registration at any time.",
+      "text": "Register .nzt names for $5/year. Extend your name registration at any time.",
       "title": "Register names"
     },
     "search": {
@@ -158,7 +158,7 @@
     "daysRemaining": "{{daysRemaining}} (out of {{totalDays}}) days remaining",
     "endPrice": "End price",
     "startingPrice": "Starting price",
-    "title": "Buy now for {{premiumInEth}}"
+    "title": "Buy now for {{premiumInnzt}}"
   },
   "pendingTx": {
     "text": "Tx Pending"
@@ -246,7 +246,7 @@
   },
   "searchErrors": {
     "domainMalformed": {
-      "long": "You have either added a domain without a TLD such as .eth or you have added unsupported characters.",
+      "long": "You have either added a domain without a TLD such as .nzt or you have added unsupported characters.",
       "short": "Domain malformed. {{searchTerm}} is not a valid domain."
     },
     "tooShort": {
@@ -297,7 +297,7 @@
     },
     "learnmore": {
       "step1": {
-        "text": "Once you register your name, Go to 'My Account' page and set your Primary ENS Name record. This allows dapps to find and display your ENS name when you connect to them with your Ethereum account. ",
+        "text": "Once you register your name, Go to 'My Account' page and set your Primary ENS Name record. This allows dapps to find and display your ENS name when you connect to them with your nztereum account. ",
         "title": "1. Set your Primary ENS Name record"
       },
       "step2": {
@@ -305,7 +305,7 @@
         "title": "2. Set other records"
       },
       "step3": {
-        "text": "You can host your static html/css/images on IPFS and put the hash in your ENS name's Content record. Then it can be resolved by ENS-aware browsers (e.g. Opera), browser extensions (Metamask), or any browser with '.link' appended to the end (e.g. ens.eth.link).",
+        "text": "You can host your static html/css/images on IPFS and put the hash in your ENS name's Content record. Then it can be resolved by ENS-aware browsers (e.g. Opera), browser extensions (Metamask), or any browser with '.link' appended to the end (e.g. ens.nzt.link).",
         "title": "3. Set a content hash of a decentralized website"
       },
       "title": "Learn how to manage your name."
@@ -321,9 +321,9 @@
       "cantEdit": "You can’t edit or add records until you migrate to the new resolver.",
       "closeEdit": "Close Add/Edit Records",
       "messages": {
-        "explanation": "This designates one of your ENS names to represent your Ethereum account and act as your cross-platform web3 username and profile. You can only have one Primary ENS Name per Ethereum account and can change it at any time.",
-        "explanation2": "Only ENS names that point to your Ethereum account can be set as your Primary ENS Name.",
-        "noForwardRecordAavilable": "No ENS names have their ETH Address records set to this address.",
+        "explanation": "This designates one of your ENS names to represent your nztereum account and act as your cross-platform web3 username and profile. You can only have one Primary ENS Name per nztereum account and can change it at any time.",
+        "explanation2": "Only ENS names that point to your nztereum account can be set as your Primary ENS Name.",
+        "noForwardRecordAavilable": "No ENS names have their nzt Address records set to this address.",
         "notSet": "Primary ENS Name (reverse record): not set",
         "reverseRecordRemoval": "Are you sure you want to delete your Primary ENS Name record?",
         "selectPlaceholder": "Select one of your ENS names",

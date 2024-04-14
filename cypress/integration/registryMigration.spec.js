@@ -6,7 +6,7 @@ const ENABLED_COLOUR = 'rgb(83, 132, 254)'
 
 describe('Migrate a subdomain to new registry', () => {
   it('can visit an unmigrated name and migrate it', () => {
-    cy.visit(`${ROOT}/name/sub1.testing.eth/details`)
+    cy.visit(`${ROOT}/name/sub1.testing.nzt/details`)
     cy.getByText('This name needs to be migrated to the new Registry.', {
       timeout: 5000,
       exact: false
@@ -33,7 +33,7 @@ describe('Migrate a subdomain to new registry', () => {
   })
 
   it('can visit an unmigrated name and cannot migrate because parent is unmigrated', () => {
-    cy.visit(`${ROOT}/name/a1.sub2.testing.eth/details`)
+    cy.visit(`${ROOT}/name/a1.sub2.testing.nzt/details`)
     cy.queryByText('You must first migrate the parent domain', {
       timeout: 5000,
       exact: false
@@ -45,7 +45,7 @@ describe('Migrate a subdomain to new registry', () => {
   })
 
   it('can visit an unmigrated name and cannot set the controller', () => {
-    cy.visit(`${ROOT}/name/sub2.testing.eth/details`)
+    cy.visit(`${ROOT}/name/sub2.testing.nzt/details`)
     cy.queryByText('This name needs to be migrated to the new Registry', {
       timeout: 5000,
       exact: false
@@ -62,7 +62,7 @@ describe('Migrate a subdomain to new registry', () => {
     )
   })
   it('cannot migrate own domain because I do not own parent domain', () => {
-    cy.visit(`${ROOT}/name/sub1.otherowner.eth/details`)
+    cy.visit(`${ROOT}/name/sub1.otherowner.nzt/details`)
     cy.queryByTestId('owner-type', { exact: false }).should(
       'have.text',
       'Controller'
@@ -82,7 +82,7 @@ describe('Migrate a subdomain to new registry', () => {
   })
 
   it('cannot migrate other domain because I do not own parent domain', () => {
-    cy.visit(`${ROOT}/name/sub2.otherowner.eth/details`)
+    cy.visit(`${ROOT}/name/sub2.otherowner.nzt/details`)
     cy.queryByText('This name needs to be migrated to the new Registry.', {
       timeout: 10000,
       exact: false
@@ -100,7 +100,7 @@ describe('Migrate a subdomain to new registry', () => {
     )
   })
   it('can migrate other domain because I own parent domain', () => {
-    cy.visit(`${ROOT}/name/sub4.testing.eth/details`)
+    cy.visit(`${ROOT}/name/sub4.testing.nzt/details`)
     cy.queryByText('This name needs to be migrated to the new Registry.', {
       timeout: 10000,
       exact: false

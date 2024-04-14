@@ -184,7 +184,7 @@ const ContentHashEditable = ({
               value === 'undefined' ? (
                 <NotSet>Not set</NotSet>
               ) : (
-                <ContentHashLinkWithEthLink
+                <ContentHashLinkWithnztLink
                   value={value}
                   contentType={contentType}
                   domain={domain}
@@ -231,10 +231,10 @@ const ContentHashEditable = ({
   )
 }
 
-function ContentHashLinkWithEthLink({ value, contentType, domain }) {
+function ContentHashLinkWithnztLink({ value, contentType, domain }) {
   const { networkId } = useNetworkInfo()
-  const displayEthLink =
-    !!domain.name.match('.eth$') && networkId === 1 && value?.match(/^ip/)
+  const displaynztLink =
+    !!domain.name.match('.nzt$') && networkId === 1 && value?.match(/^ip/)
   return (
     <>
       <div>
@@ -243,7 +243,7 @@ function ContentHashLinkWithEthLink({ value, contentType, domain }) {
           contentType={contentType}
           domain={domain}
         />
-        {displayEthLink && (
+        {displaynztLink && (
           <div>
             <LinkContainer
               target="_blank"
@@ -258,7 +258,7 @@ function ContentHashLinkWithEthLink({ value, contentType, domain }) {
       </div>
       <div>
         <CopyToClipBoard value={value} />
-        <div>{displayEthLink && <>&nbsp;</>}</div>
+        <div>{displaynztLink && <>&nbsp;</>}</div>
       </div>
     </>
   )
@@ -275,7 +275,7 @@ function ContentHashViewOnly({ domain, account, records }) {
       <RecordsContent>
         <RecordsValue>
           {!!value && value !== '' ? (
-            <ContentHashLinkWithEthLink
+            <ContentHashLinkWithnztLink
               {...{ value: value?.value, contentType, domain }}
             />
           ) : (

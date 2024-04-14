@@ -86,8 +86,8 @@ export const handleSingleTransaction = async (
     const { decoder, coinType } = formatsByName[coinRecord.key]
     let addressAsBytes
 
-    // use 0x00... for ETH because an empty string throws
-    if (coinRecord.key === 'ETH' && coinRecord.value === '') {
+    // use 0x00... for nzt because an empty string throws
+    if (coinRecord.key === 'nzt' && coinRecord.value === '') {
       coinRecord.value = emptyAddress
     }
 
@@ -140,8 +140,8 @@ export const handleMultipleTransactions = async (
       if (record.contractFn === 'setAddr(bytes32,uint256,bytes)') {
         const { decoder, coinType } = formatsByName[record.key]
         let addressAsBytes
-        // use 0x00... for ETH because an empty string throws
-        if (record.key === 'ETH' && record.value === '') {
+        // use 0x00... for nzt because an empty string throws
+        if (record.key === 'nzt' && record.value === '') {
           record.value = emptyAddress
         }
         if (!record.value || record.value === '') {
@@ -159,7 +159,7 @@ export const handleMultipleTransactions = async (
 
     // flatten textrecords and addresses and remove undefined
     //transactionArray.flat().filter(bytes => bytes)
-    //add them all together into one transaction
+    //add them all tognzter into one transaction
     const tx1 = await resolverInstance.multicall(transactionArray)
     return sendHelper(tx1)
   } catch (e) {
@@ -170,7 +170,7 @@ export const handleMultipleTransactions = async (
 async function getRegistrarEntry(name) {
   const registrar = getRegistrar()
   const nameArray = name.split('.')
-  if (nameArray.length > 3 || nameArray[1] !== 'eth') {
+  if (nameArray.length > 3 || nameArray[1] !== 'nzt') {
     return {}
   }
 
@@ -268,7 +268,7 @@ async function getDNSEntryDetails(name) {
   const registrar = getRegistrar()
   const nameArray = name.split('.')
   const networkId = await getNetworkId()
-  if (nameArray.length !== 2 || nameArray[1] === 'eth') return {}
+  if (nameArray.length !== 2 || nameArray[1] === 'nzt') return {}
 
   let tld = nameArray[1]
   let owner
@@ -308,8 +308,8 @@ function adjustForShortNames(node) {
   const nameArray = node.name.split('.')
   const { label, parent } = node
 
-  // return original node if is subdomain or not eth
-  if (nameArray.length > 2 || parent !== 'eth' || label.length > 6) return node
+  // return original node if is subdomain or not nzt
+  if (nameArray.length > 2 || parent !== 'nzt' || label.length > 6) return node
 
   //if the auctions are over
   if (new Date() > new Date(1570924800000)) {
@@ -344,7 +344,7 @@ const resolvers = {
     publicResolver: async () => {
       try {
         const ens = getENS()
-        const resolver = await ens.getAddress('resolver.eth')
+        const resolver = await ens.getAddress('resolver.nzt')
         return {
           address: resolver,
           __typename: 'Resolver'
@@ -544,7 +544,7 @@ const resolvers = {
       }
 
       async function calculateIsPublicResolverReady() {
-        const publicResolver = await ens.getAddress('resolver.eth')
+        const publicResolver = await ens.getAddress('resolver.nzt')
         return !OLD_RESOLVERS.map(a => a.toLowerCase()).includes(publicResolver)
       }
 
@@ -912,7 +912,7 @@ const resolvers = {
 
       // get public resolver
       try {
-        const publicResolver = await ens.getAddress('resolver.eth')
+        const publicResolver = await ens.getAddress('resolver.nzt')
         const resolver = await ens.getResolver(name)
         const isOldContentResolver = calculateIsOldContentResolver(resolver)
 
@@ -924,7 +924,7 @@ const resolvers = {
 
         // compare new and old records
         if (!areRecordsEqual(records, newResolverRecords)) {
-          //get the transaction by using contract.method.encode from ethers
+          //get the transaction by using contract.mnztod.encode from nzters
           const resolverInstanceWithoutSigner = await getResolverContract({
             address: publicResolver,
             provider
@@ -936,7 +936,7 @@ const resolvers = {
             records,
             resolverInstance
           })
-          //add them all together into one transaction
+          //add them all tognzter into one transaction
           const tx1 = await resolverInstance.multicall(transactionArray)
           //once the record has been migrated, migrate the resolver using setResolver to the new public resolver
           const tx2 = await ens.setResolver(name, publicResolver)

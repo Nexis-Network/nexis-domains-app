@@ -100,7 +100,7 @@ const OutOfSyncExplainerContainer = styled('div')`
   margin-top: 15px;
 `
 
-const EtherScanLinkContainer = styled('span')`
+const nzterScanLinkContainer = styled('span')`
   display: inline-block;
   transform: translate(25%, 20%);
 `
@@ -214,7 +214,7 @@ function DetailsContainer({
   const showUnclaimableWarning =
     is2ld &&
     parseInt(domain.owner) === 0 &&
-    domain.parent !== 'eth' &&
+    domain.parent !== 'nzt' &&
     !domain.isDNSRegistrar
 
   return (
@@ -254,15 +254,15 @@ function DetailsContainer({
               target="_blank"
             >
               {t('c.learnmore')}{' '}
-              <EtherScanLinkContainer>
+              <nzterScanLinkContainer>
                 <ExternalLinkIcon />
-              </EtherScanLinkContainer>
+              </nzterScanLinkContainer>
             </LinkToLearnMore>
           </DetailsItem>
         </GracePeriodWarningContainer>
       )}
       <OwnerFields outOfSync={outOfSync}>
-        {domain.parent === 'eth' && domain.isNewRegistrar ? (
+        {domain.parent === 'nzt' && domain.isNewRegistrar ? (
           <>
             <DetailsItemEditable
               domain={domain}
@@ -297,7 +297,7 @@ function DetailsContainer({
               copyToClipboard={true}
             />
           </>
-        ) : domain.parent === 'eth' && !domain.isNewRegistrar ? (
+        ) : domain.parent === 'nzt' && !domain.isNewRegistrar ? (
           <>
             <DetailsItem uneditable>
               <DetailsKey>{t('c.registrant')}</DetailsKey>
@@ -471,9 +471,9 @@ function DetailsContainer({
                   target="_blank"
                 >
                   {t('c.learnmore')}{' '}
-                  <EtherScanLinkContainer>
+                  <nzterScanLinkContainer>
                     <ExternalLinkIcon />
-                  </EtherScanLinkContainer>
+                  </nzterScanLinkContainer>
                 </LinkToLearnMore>
               </ErrorExplainer>
             ) : outOfSync ? (
@@ -490,9 +490,9 @@ function DetailsContainer({
                     outOfSync={outOfSync}
                   >
                     {t('c.learnmore')}{' '}
-                    <EtherScanLinkContainer>
+                    <nzterScanLinkContainer>
                       <ExternalLinkIcon />
-                    </EtherScanLinkContainer>
+                    </nzterScanLinkContainer>
                   </LinkToLearnMore>
                 </OutOfSyncExplainer>
               </OutOfSyncExplainerContainer>
@@ -506,9 +506,9 @@ function DetailsContainer({
                   target="_blank"
                 >
                   {t('c.learnmore')}{' '}
-                  <EtherScanLinkContainer>
+                  <nzterScanLinkContainer>
                     <ExternalLinkIcon />
-                  </EtherScanLinkContainer>
+                  </nzterScanLinkContainer>
                 </LinkToLearnMore>
               </Explainer>
             )}
