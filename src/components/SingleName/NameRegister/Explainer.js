@@ -61,6 +61,19 @@ const NotifyButtonDisabled = styled('div')`
   color: hsla(0, 0%, 82%, 1);
 `
 
+const CTAContainer = styled('div')`
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #528ffe;
+  color: white;
+  text-decoration: none;
+`;
+
 const Explainer = ({ step, waitPercentComplete, waitTime ,dispatch}) => {
   const { t } = useTranslation()
   const titles = {
@@ -129,7 +142,9 @@ const Explainer = ({ step, waitPercentComplete, waitTime ,dispatch}) => {
           text={t('register.step3.text')}
         />
       </Steps>
-      {waitPercentComplete==100 && step==='COMMIT_CONFIRMED'?<button onClick={()=>dispatch('NEXT')}>Continue</button> :<></>}
+      
+      {waitPercentComplete==100 && step==='COMMIT_CONFIRMED'?<CTAContainer onClick={()=>dispatch('NEXT')}>Continue to next step</CTAContainer>:<></>}
+      
     </>
   )
 }

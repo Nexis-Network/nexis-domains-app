@@ -41,6 +41,20 @@ const PremiumWarning = styled('div')`
   margin-bottom: 1em;
 `
 
+const CTAContainer = styled('div')`
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #528ffe;
+  color: white;
+  text-decoration: none;
+`;
+
+
 const NameRegister = ({
   domain,
   waitTime,
@@ -311,7 +325,13 @@ const NameRegister = ({
         dispatch={dispatch}
       />
       <Progress step={step} waitPercentComplete={waitPercentComplete} />
-      {step=='COMMIT_SENT' ?<button onClick={() => dispatch('NEXT')}>Confirm</button>:""}
+      
+      {step=='COMMIT_SENT' ?
+      <CTAContainer onClick={() => dispatch('NEXT')} style={{cursor:'pointer'}}> 
+      "Confirmed Transaction but Still showing Tx Pending? Click Me 😊"
+      </CTAContainer>
+      :""}
+   
       
       <CTA
         hasSufficientBalance={hasSufficientBalance}
