@@ -122,7 +122,8 @@ const namehashCheckLink = new ApolloLink((operation, forward) => {
 
 export function setupClient() {
   const httpLink = new HttpLink({
-    uri: () => getGraphQLAPI()
+    uri: () => getGraphQLAPI(),
+    mode: 'no-cors'
   })
 
   const web3Link = new ApolloLink(operation => {
