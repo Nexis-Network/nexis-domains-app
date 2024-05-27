@@ -24,8 +24,8 @@ const cache = new InMemoryCache({
 })
 
 const endpoints = {
-  '1': 'http://52.91.69.144:8000/subgraphs/name/graphprotocol/ens/',
-  '2370': 'http://52.91.69.144:8000/subgraphs/name/graphprotocol/ens/'
+  '1': 'https://graph.nexis.network/subgraphs/name/graphprotocol/ens/',
+  '2370': 'https://graph.nexis.network/subgraphs/name/graphprotocol/ens/'
 }
 
 function getGraphQLAPI() {
