@@ -5,7 +5,7 @@
   "iconPath": "android-chrome-144x144.png",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "https://raw.githubusercontent.com/Nexis-Network/Nexis-Brand-Kit/9c5784319e7dc0f145050f800c0fbb6f0b9aca42/Group%20(3).svg",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
